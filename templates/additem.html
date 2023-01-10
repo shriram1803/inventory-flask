@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/additem" method="post">
+        Enter Name: <input type="text" name="cname"> <br>
+        Enter Mobile No: <input type="text" name="cmobile"> <br>
+        Enter Product ID: <input type="text" name="pid"> <br>
+        Enter Product Name: <input type="text" name="pname"> <br>
+        Enter Product Price: <input type="text" name="pprice"> <br>
+        Enter Stock Quantity: <input type="text" name="pquantity"> <br>
+        <label for="type">Choose a Type:</label>
+        <select name="ptype" id="type">
+            <option value="Raw Material">Raw Material</option>
+            <option value="Work in Progress">Work in Progress</option>
+            <option value="Finished Good">Finished Good</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
